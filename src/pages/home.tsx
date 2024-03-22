@@ -7,7 +7,6 @@ import { getAll } from "../services/data";
 import ContryCard from "../components/contryCard";
 import { Skeleton } from "@mui/material";
 import { FaArrowCircleUp } from "react-icons/fa";
-import { WiSnow } from "react-icons/wi";
 
 type contryType = {
     flag: string,
