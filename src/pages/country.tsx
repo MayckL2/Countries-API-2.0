@@ -20,7 +20,7 @@ export default function Country() {
     useEffect(() => {
         window.scrollTo(0, 0)
         let response = getAll()
-        let filter = response.filter((value) => value.name == name)
+        let filter = response.filter((value) => value.name == name?.split('=')[1])
         setCountry(filter[0])
         setPopulation(decimal(filter[0].population))
     }, [])

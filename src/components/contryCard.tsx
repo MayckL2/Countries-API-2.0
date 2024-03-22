@@ -10,7 +10,7 @@ type contryProp = {
 
 export default function ContryCard(props: contryProp){
 
-    return(<Link to={`/country/${props.name}`} className="rounded-lg overflow-hidden bg-slate-300 dark:bg-slate-700 cursor-pointer">
+    return(<Link to={`/country/name=${props.name}`} className="rounded-lg overflow-hidden bg-slate-300 dark:bg-slate-700 cursor-pointer">
         <img className="h-40 w-full object-cover" src={props.flag} alt={props.name} />
         <p className="text-xl font-bold m-4">{props.name}</p>
 
