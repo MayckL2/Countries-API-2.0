@@ -67,8 +67,8 @@ export default function Country() {
                     </div>
                     {country.borders &&
                         <div className="flex gap-2 col-span-2 items-center">
-                            <p className="font-bold">Borders Countries:</p>
-                            <ul className="flex gap-2">
+                            <p className="font-bold text-lg whitespace-nowrap">Borders Countries:</p>
+                            <ul className="flex flex-wrap gap-2">
                                 {country.borders.map((value: string, key: number) => <li key={key} className="py-2 px-4 rounded bg-slate-300 dark:bg-slate-700 h-min shadow-lg">{value}</li>)}
                             </ul>
                         </div>
